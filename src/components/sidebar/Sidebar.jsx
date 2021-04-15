@@ -13,43 +13,67 @@ import "./scss/sidebar.scss";
 
 const Sidebar = () => {
   return (
-    <nav className="nav">
+    <nav className="nav Sidebar">
       <ul className="nav__list">
         <li className="nav__listitem">
           <TwitterIcon className="nav__logo" />
         </li>
 
         <li className="nav__listitem nav__listitem-active">
-          <HomeOutlinedIcon />
+          <HomeOutlinedIcon className="nav__listitem_icon" />
           <h2>Home</h2>
+          <div className="nav__tooltip">
+            <p>Home</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <ExploreOutlinedIcon />
+          <ExploreOutlinedIcon className="nav__listitem_icon" />
           <h2>Explore</h2>
+          <div className="nav__tooltip">
+            <p>Explore</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <NotificationsNoneIcon />
+          <NotificationsNoneIcon className="nav__listitem_icon" />
           <h2>Notifications</h2>
+          <div className="nav__tooltip">
+            <p>Notifications</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <MailOutlineIcon />
+          <MailOutlineIcon className="nav__listitem_icon" />
           <h2>Messages</h2>
+          <div className="nav__tooltip">
+            <p>Messages</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <BookmarkBorderIcon />
+          <BookmarkBorderIcon className="nav__listitem_icon" />
           <h2>Bookmarks</h2>
+          <div className="nav__tooltip">
+            <p>Bookmarks</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <ListAltOutlinedIcon />
+          <ListAltOutlinedIcon className="nav__listitem_icon" />
           <h2>Lists</h2>
+          <div className="nav__tooltip">
+            <p>Lists</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <AccountCircleOutlinedIcon />
+          <AccountCircleOutlinedIcon className="nav__listitem_icon" />
           <h2>Profile</h2>
+          <div className="nav__tooltip">
+            <p>Profile</p>
+          </div>
         </li>
         <li className="nav__listitem">
-          <MoreHorizOutlinedIcon />
+          <MoreHorizOutlinedIcon className="nav__listitem_icon" />
           <h2>More</h2>
+          <div className="nav__tooltip">
+            <p>More</p>
+          </div>
         </li>
       </ul>
       <div>
