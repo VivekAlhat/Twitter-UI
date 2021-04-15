@@ -1,0 +1,103 @@
+.nav {
+  position: absolute;
+  height: 100vh;
+  padding: 0 2.5rem;
+  border-right: 1px solid #d3d3d3;
+
+  &__logo {
+    font-size: 2rem !important;
+    color: rgba(29, 161, 242, 1);
+    cursor: pointer;
+
+    :hover {
+      background: #dbf6e9;
+    }
+  }
+
+  &__tweet-btn-mobile {
+    margin-left: 0.8rem;
+    display: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #fff;
+    background: rgba(29, 161, 242, 1);
+
+    &:hover {
+      background: rgb(31, 142, 211);
+    }
+  }
+
+  &__tweet-btn {
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1rem;
+    color: #fff;
+    background: rgba(29, 161, 242, 1);
+    width: 100% !important;
+    border-radius: 50px;
+
+    &:hover {
+      background: rgb(31, 142, 211);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+
+    &item {
+      width: fit-content;
+      font-size: 14px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 50px;
+      padding: 12px;
+      cursor: pointer;
+
+      h2 {
+        padding-right: 10px;
+      }
+
+      &-active {
+        color: rgba(29, 161, 242, 1);
+      }
+
+      &:hover {
+        background: rgba(29, 161, 242, 0.1);
+        color: rgba(29, 161, 242, 1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+    &__list {
+      &item {
+        h2 {
+          display: none;
+        }
+      }
+    }
+
+    &__tweet-btn {
+      display: none;
+    }
+
+    &__tweet-btn-mobile {
+      display: block;
+    }
+  }
+}
